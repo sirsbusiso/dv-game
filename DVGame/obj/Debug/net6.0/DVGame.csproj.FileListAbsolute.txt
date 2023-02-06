@@ -1,0 +1,15 @@
+C:\Users\Khayelihle Ntanzi\source\repos\DVGame\DVGame\bin\Debug\net6.0\DVGame.exe
+C:\Users\Khayelihle Ntanzi\source\repos\DVGame\DVGame\bin\Debug\net6.0\DVGame.deps.json
+C:\Users\Khayelihle Ntanzi\source\repos\DVGame\DVGame\bin\Debug\net6.0\DVGame.runtimeconfig.json
+C:\Users\Khayelihle Ntanzi\source\repos\DVGame\DVGame\bin\Debug\net6.0\DVGame.dll
+C:\Users\Khayelihle Ntanzi\source\repos\DVGame\DVGame\bin\Debug\net6.0\DVGame.pdb
+C:\Users\Khayelihle Ntanzi\source\repos\DVGame\DVGame\obj\Debug\net6.0\DVGame.csproj.AssemblyReference.cache
+C:\Users\Khayelihle Ntanzi\source\repos\DVGame\DVGame\obj\Debug\net6.0\DVGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Khayelihle Ntanzi\source\repos\DVGame\DVGame\obj\Debug\net6.0\DVGame.AssemblyInfoInputs.cache
+C:\Users\Khayelihle Ntanzi\source\repos\DVGame\DVGame\obj\Debug\net6.0\DVGame.AssemblyInfo.cs
+C:\Users\Khayelihle Ntanzi\source\repos\DVGame\DVGame\obj\Debug\net6.0\DVGame.csproj.CoreCompileInputs.cache
+C:\Users\Khayelihle Ntanzi\source\repos\DVGame\DVGame\obj\Debug\net6.0\DVGame.dll
+C:\Users\Khayelihle Ntanzi\source\repos\DVGame\DVGame\obj\Debug\net6.0\refint\DVGame.dll
+C:\Users\Khayelihle Ntanzi\source\repos\DVGame\DVGame\obj\Debug\net6.0\DVGame.pdb
+C:\Users\Khayelihle Ntanzi\source\repos\DVGame\DVGame\obj\Debug\net6.0\DVGame.genruntimeconfig.cache
+C:\Users\Khayelihle Ntanzi\source\repos\DVGame\DVGame\obj\Debug\net6.0\ref\DVGame.dll
