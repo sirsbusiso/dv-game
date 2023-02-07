@@ -172,13 +172,12 @@ class DeckOfCards
         }
 
         //Display player's score
-        string equalCardScorePlayers = "";
+        List<SuitScore> firstTie = null;
         List<SuitScore> scoreAfterSuitValue = new List<SuitScore>();
         List<SuitScore> scoreDisplay = new List<SuitScore>();
-        bool tie = false;
 
         var highestScore = scores.Max(x => x.Score);
-        var firstTie = scores.FindAll(x => x.Score == highestScore);
+        firstTie = scores.FindAll(x => x.Score == highestScore);
         if (firstTie.Count > 1)
         {
             foreach (var cl in firstTie)
@@ -186,7 +185,6 @@ class DeckOfCards
                 var finalTieScore = player.FindAll(x => x.PlayerName == cl.PlayerName).ToArray();
                 if (finalTieScore != null)
                 {
-                    tie = true;
                     foreach (var f in finalTieScore)
                     {
                         if (f.Suit.Contains("H"))
@@ -206,56 +204,54 @@ class DeckOfCards
                             cl.Score = cl.Score + 4;
                         }
                     }
-                    scoreAfterSuitValue.Add(new SuitScore { PlayerName = cl.PlayerName, Score = cl.Score });
+
+                    scores.Add(new SuitScore { PlayerName = cl.PlayerName , Score = cl.Score });
 
                 }
 
             }
 
         }
-        else
+
+        //Check if there is a second tie from the first tie
+        List<SuitScore> secondTie = null;
+        bool recurringTie = false;
+        string equalCardScorePlayers = "";
+        highestScore = firstTie.Max(x => x.Score);
+        secondTie = firstTie.FindAll(x => x.Score == highestScore);
+        if (secondTie.Count > 1)
+        { 
+            foreach (var st in secondTie)
+            {
+                recurringTie = true;
+                if (!equalCardScorePlayers.Contains(st.PlayerName))
+                {
+                    equalCardScorePlayers += st.PlayerName + ",";
+
+                }
+               
+                
+            }
+            scores.Add(new SuitScore { PlayerName = equalCardScorePlayers.Remove(equalCardScorePlayers.Length - 1, 1), Score = highestScore });
+        }
+
+        foreach (var sd in scores.DistinctBy(x => x.PlayerName).OrderByDescending(x => x.Score))
         {
-            foreach (var sd in scores.Distinct().OrderByDescending(x => x.Score))
+            if(recurringTie)
+            {
+                var checkIfExist = secondTie.Find(s => s.PlayerName == sd.PlayerName);
+                if (checkIfExist == null)
+                {
+                    Console.WriteLine(sd.PlayerName + ": " + sd.Score);
+                }
+               
+            }
+            else
             {
                 Console.WriteLine(sd.PlayerName + ": " + sd.Score);
             }
+            
         }
-
-        
-
-        for (int s = 0; s < scoreAfterSuitValue.Count; s++)
-        {
-            highestScore = scoreAfterSuitValue.Max(x => x.Score);
-            var secondTie = scoreAfterSuitValue.FindAll(x => x.Score == highestScore);
-            if (secondTie.Count > 1)
-            {
-                foreach (var st in secondTie)
-                {
-                    if (!equalCardScorePlayers.Contains(st.PlayerName))
-                    {
-                        equalCardScorePlayers += st.PlayerName + ",";
-                    }
-
-                }
-            }
-            else if (tie == true)
-            {
-                var checkIfExist = scores.Find(x => x.PlayerName == scoreAfterSuitValue[s].PlayerName);
-                if (checkIfExist == null)
-                {
-                    int indexOf = scoreAfterSuitValue.IndexOf(scoreAfterSuitValue[s]);
-                    Console.WriteLine(scoreAfterSuitValue[s].PlayerName + ": " + scoreAfterSuitValue[s].Score);
-                    scoreAfterSuitValue.RemoveAt(indexOf);
-                }
-
-            }
-
-        }
-        if (!String.IsNullOrEmpty(equalCardScorePlayers))
-        {
-            Console.WriteLine(equalCardScorePlayers.Remove(equalCardScorePlayers.Length - 1, 1) + ": " + score);
-        }
-
 
     }
 

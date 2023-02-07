@@ -13,3 +13,18 @@ C:\Users\Khayelihle Ntanzi\source\repos\DVGame\DVGame\obj\Debug\net6.0\refint\DV
 C:\Users\Khayelihle Ntanzi\source\repos\DVGame\DVGame\obj\Debug\net6.0\DVGame.pdb
 C:\Users\Khayelihle Ntanzi\source\repos\DVGame\DVGame\obj\Debug\net6.0\DVGame.genruntimeconfig.cache
 C:\Users\Khayelihle Ntanzi\source\repos\DVGame\DVGame\obj\Debug\net6.0\ref\DVGame.dll
+C:\Users\trq0389\Documents\dv-game\DVGame\bin\Debug\net6.0\DVGame.exe
+C:\Users\trq0389\Documents\dv-game\DVGame\bin\Debug\net6.0\DVGame.deps.json
+C:\Users\trq0389\Documents\dv-game\DVGame\bin\Debug\net6.0\DVGame.runtimeconfig.json
+C:\Users\trq0389\Documents\dv-game\DVGame\bin\Debug\net6.0\DVGame.dll
+C:\Users\trq0389\Documents\dv-game\DVGame\bin\Debug\net6.0\DVGame.pdb
+C:\Users\trq0389\Documents\dv-game\DVGame\obj\Debug\net6.0\DVGame.csproj.AssemblyReference.cache
+C:\Users\trq0389\Documents\dv-game\DVGame\obj\Debug\net6.0\DVGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\trq0389\Documents\dv-game\DVGame\obj\Debug\net6.0\DVGame.AssemblyInfoInputs.cache
+C:\Users\trq0389\Documents\dv-game\DVGame\obj\Debug\net6.0\DVGame.AssemblyInfo.cs
+C:\Users\trq0389\Documents\dv-game\DVGame\obj\Debug\net6.0\DVGame.csproj.CoreCompileInputs.cache
+C:\Users\trq0389\Documents\dv-game\DVGame\obj\Debug\net6.0\DVGame.dll
+C:\Users\trq0389\Documents\dv-game\DVGame\obj\Debug\net6.0\refint\DVGame.dll
+C:\Users\trq0389\Documents\dv-game\DVGame\obj\Debug\net6.0\DVGame.pdb
+C:\Users\trq0389\Documents\dv-game\DVGame\obj\Debug\net6.0\DVGame.genruntimeconfig.cache
+C:\Users\trq0389\Documents\dv-game\DVGame\obj\Debug\net6.0\ref\DVGame.dll
